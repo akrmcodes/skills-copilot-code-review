@@ -6,7 +6,7 @@ applyTo: "*.html,*.css,*.js"
 
 ### HTML Structure & Accessibility
 - Use semantic HTML elements: `<header>`, `<nav>`, `<main>`, `<section>`, `<aside>`, `<footer>`, etc.
-- Include `alt` attributes on all images and icons
+- Include `alt` attributes on all images and icons.
 - Use `aria-label` for icon buttons and non-obvious controls (e.g., search button)
 - Include meaningful `id` and `class` attributes for styling and JavaScript targeting
 
