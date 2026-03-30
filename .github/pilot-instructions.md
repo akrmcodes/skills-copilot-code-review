@@ -1,13 +1,9 @@
-## Security
+# Deprecated: use `.github/copilot-instructions.md`
 
-- Validate input sanitization practices.
-- Search for risks that might expose user data.
-- Prefer loading configuration and content from the database instead of hard coded content. If absolutely necessary, load it from environment variables or a non-committed config file.
+This file was previously used for repository-wide Copilot instructions, but
+the repository workflows and documentation now expect the file to be named
+`.github/copilot-instructions.md`.
 
-## Code Quality
-
-- Use consistent naming conventions.
-- Try to reduce code duplication.
-- Prefer maintainability and readability over optimization.
-- If a method is used a lot, try to optimize it for performance.
-- Prefer explicit error handling over silent failures.
+Please move or copy the contents of this file into
+`.github/copilot-instructions.md` and then remove `.github/pilot-instructions.md`
+from the repository to avoid confusion and workflow failures.
