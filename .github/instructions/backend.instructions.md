@@ -22,9 +22,9 @@ applyTo: "backend/**/*,*.py"
 - These functions use Argon2 hashing (already imported and configured)
 
 ### Error Handling & Logging
-- Log errors on the server (errors are for debugging, not user feedback)
-- Raise `HTTPException` with appropriate status codes instead of returning error details
-- Do NOT propagate implementation details or stack traces to the frontend
+- Log full errors server-side (stack traces, exception details are for server debugging only)
+- Raise `HTTPException` with appropriate status codes and safe, user-friendly `detail` messages
+- Do NOT propagate implementation details, stack traces, or sensitive data to the frontend
 - Example: Use status 404 for missing resources, 400 for bad input, 401 for auth failures
 
 ### Integration with Frontend
